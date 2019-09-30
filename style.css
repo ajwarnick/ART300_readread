@@ -1,0 +1,31 @@
+p{
+    margin: ;
+        margin-top: ;
+        margin-right: ;
+        margin-bottom: ;
+        margin-left: ;
+    padding: ;
+        padding-top: ;
+        padding-right: ;
+        padding-bottom: ;
+        padding-left: ;
+    font-size: ;
+    color: ;
+    font-family: ;
+    width: ;
+    line-height: ;
+}
+
+/* ----------- SMART PHONES ----------- */
+@media only screen and (max-width: 800px) {
+    p{
+
+    }
+}
+
+/* ----------- TABLETS ----------- */
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    p{
+
+    }
+}
