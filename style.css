@@ -1,20 +1,160 @@
-p{
-    margin: ;
-        margin-top: ;
-        margin-right: ;
-        margin-bottom: ;
-        margin-left: ;
-    padding: ;
-        padding-top: ;
-        padding-right: ;
-        padding-bottom: ;
-        padding-left: ;
-    font-size: ;
-    color: ;
-    font-family: ;
-    width: ;
-    line-height: ;
+body{
+    background-color: antiquewhite;
+    font-family: 'Grenze', serif;
 }
+pre{
+    display: none;
+}
+a{
+    color: red;
+}
+
+p{
+    margin: auto;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+    padding: 0;
+        padding-top: 0;
+        padding-right: 20vw;
+        padding-bottom: 0;
+        padding-left: 0;
+    font-size: 1em;
+    color: black;
+    font-family: 'Grenze', serif;
+    width: 40vw;
+    max-width: 600px;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+}
+p::first-letter {
+    font-size: 2em;
+}
+
+p:nth-of-type(5n), p:nth-of-type(6n){
+    padding-right: 0vw;
+    padding-left: 20vw;
+}
+
+p.center{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+p.copyright, p.publisher{
+    width:30vw;
+    margin: auto;
+    padding: 0;
+}
+
+p.publisher{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+
+h2{
+    margin-top: 80vh;
+    font-size: 4em;
+    text-align: center;
+    color:#560319;
+}
+
+h4{
+    width: 40vw;
+    margin: auto;
+    font-size: 2em;
+}
+
+
+.footnote{
+    font-family: 'Source Code Pro', monospace;
+    font-size: .7em;
+    width:15vw;
+    position: absolute;
+}
+
+.footnote p{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.fnanchor{
+    vertical-align: super;
+    font-size: .7em;
+}
+
+.pagenum {
+    position: absolute;
+    right:0;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    
+}
+
+.pagenum a{
+    color: lightsalmon;
+}
+
+p.figcenter, div.figcenter{
+    /*reset all padding and margin */
+    padding: 0;
+    margin: 0;
+    margin: 70px auto 70px auto;
+}
+
+.figcenter + .figcenter{
+    margin-top: 20vh;
+}
+
+.figcenter{
+    width: auto;
+    background-color: antiquewhite;
+    
+}
+
+.figcenter img{
+    /* this mixes the image with the background of its parent so the boxes are not white */
+    mix-blend-mode: multiply;
+
+    /* this centers the images */
+    display: block;
+    margin: 0 auto;
+
+    /* limit our images to the width of their container */
+    /* max-width: 100%;
+    min-width: 100%;
+    height: auto; */
+}
+
+
+.initial{
+    display:none;
+}
+
+
+
+h1:first-of-type{
+    text-align: center;
+    font-size: 5em;
+    color:#560319;
+    margin-bottom: 25vh;
+    margin-top: 25vh;
+}
+
+
+
+
+table{
+    width: 30vw;
+    margin:auto;
+}
+
 
 /* ----------- SMART PHONES ----------- */
 @media only screen and (max-width: 800px) {
