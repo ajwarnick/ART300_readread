@@ -45,6 +45,10 @@ p.center{
     max-width: 100%;
 }
 
+.rightalign{
+    text-align: right;
+}
+
 p.copyright, p.publisher{
     width:30vw;
     margin: auto;
@@ -159,13 +163,71 @@ table{
 /* ----------- SMART PHONES ----------- */
 @media only screen and (max-width: 800px) {
     p{
-
+        margin: auto;
+            margin-top: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+        padding: 0;
+            padding-top: 0;
+            padding-right: 0vw;
+            padding-bottom: 0;
+            padding-left: 0;
+        font-size: 1.4em;
+        color: black;
+        font-family: 'Grenze', serif;
+        width: 80vw;
+        max-width: 600px;
+        line-height: 1.7em;
+        letter-spacing: 1px;
     }
+    p::first-letter {
+        font-size: 2.5em;
+    }
+    
+    p:nth-of-type(5n), p:nth-of-type(6n){
+        padding-right: 0vw;
+        padding-left: 0vw;
+        margin-bottom: 70px;
+    }
+
+    .footnote, .fnanchor{
+        display: none;
+    } 
 }
 
 /* ----------- TABLETS ----------- */
 @media only screen and (min-width: 800px) and (max-width: 1280px) {
     p{
-
+        margin: auto;
+            margin-top: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+        padding: 0;
+            padding-top: 0;
+            padding-right: 30vw;
+            padding-bottom: 0;
+            padding-left: 0;
+        font-size: 1.1em;
+        color: black;
+        font-family: 'Grenze', serif;
+        width: 60vw;
+        max-width: 600px;
+        line-height: 1.4em;
+        letter-spacing: 1px;
     }
+    p::first-letter {
+        font-size: 2.5em;
+    }
+    
+    p:nth-of-type(5n), p:nth-of-type(6n){
+        padding-right: 0vw;
+        padding-left: 30vw;
+        margin-bottom: 70px;
+    }
+
+    .footnote, .fnanchor{
+        display: none;
+    } 
 }
