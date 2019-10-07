@@ -6,7 +6,8 @@ pre{
     display: none;
 }
 a{
-    color: red;
+    //color: rgb(255, 0, 0);
+    color: rgb(160, 24, 24);
 }
 
 p{
@@ -118,13 +119,12 @@ p.figcenter, div.figcenter{
 
 .figcenter{
     width: auto;
-    background-color: antiquewhite;
-    
+    background-color: rgb(250, 240, 232);
 }
 
 .figcenter img{
     /* this mixes the image with the background of its parent so the boxes are not white */
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
 
     /* this centers the images */
     display: block;
@@ -135,6 +135,16 @@ p.figcenter, div.figcenter{
     min-width: 100%;
     height: auto; */
 }
+
+a[name="chap2"] {
+    
+}
+
+
+
+
+
+
 
 
 .initial{
