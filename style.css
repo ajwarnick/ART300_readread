@@ -206,6 +206,10 @@ table{
     .footnote, .fnanchor{
         display: none;
     } 
+
+    h4{
+        width: 400px;
+    }
 }
 
 /* ----------- TABLETS ----------- */
