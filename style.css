@@ -6,7 +6,6 @@ pre{
     display: none;
 }
 a{
-    //color: rgb(255, 0, 0);
     color: rgb(160, 24, 24);
 }
 
@@ -124,7 +123,7 @@ p.figcenter, div.figcenter{
 
 .figcenter img{
     /* this mixes the image with the background of its parent so the boxes are not white */
-    /* mix-blend-mode: multiply; */
+    mix-blend-mode: multiply;
 
     /* this centers the images */
     display: block;
