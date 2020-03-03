@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze|UnifrakturCook:700&display=swap');
+
 body{
     background-color: rgb(250, 240, 232);
     font-family: 'Grenze', serif;
@@ -30,7 +32,27 @@ p{
 }
 p::first-letter {
     font-size: 2em;
+    /* font-size: 4em;
+    initial-letter: 1.5;
+    float: left; */
 }
+p .firstwords{
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    font-size: 1em;
+}
+p .firstwords::first-letter {
+    font-family: 'UnifrakturCook', cursive;
+    color: rgb(160, 24, 24);
+    font-size: 6em;
+    initial-letter: 3;
+    text-transform: uppercase;
+    -moz-animation: bugfix 0.001s;
+}
+
+@-moz-keyframes bugfix { from { padding-right: 1px ; } to { padding-right: 0; } }
+
 
 p:nth-of-type(5n), p:nth-of-type(7n){
     padding-right: 0vw;
@@ -149,7 +171,17 @@ a[name="chap2"] {
 
 
 
+table[summary="table of contents"] tr:nth-of-type(3) td{
+    /* text-align: center; */
+    padding-left: 90px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-transform: lowercase;
 
+    /* font-family: 'UnifrakturCook', cursive; */
+    
+    font-size: 2em;
+}
 
 
 
