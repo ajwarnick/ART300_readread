@@ -37,7 +37,7 @@ p:nth-of-type(5n), p:nth-of-type(7n){
     padding-left: 20vw;
 }
 
-p:nth-of-type(3n), p:nth-of-type(6n){
+p:nth-child(3n), p:nth-child(6n){
     padding-right: 0vw;
     padding-left: 10vw;
 }
