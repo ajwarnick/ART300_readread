@@ -1,299 +1,314 @@
-@import url('https://fonts.googleapis.com/css?family=Grenze|UnifrakturCook:700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
 
-body{
-    background-color: rgb(250, 240, 232);
-    font-family: 'Grenze', serif;
-    overflow-x: hidden;
-}
-pre{
-    display: none;
-}
-a{
-    color: rgb(160, 24, 24);
+@font-face {
+  font-family: "Format_1452";
+  src: url("/webfonts/Format_1452.eot");
+  src: url("/webfonts/Format_1452.eot?#iefix") format("embedded-opentype"),
+    url("/webfonts/Format_1452.woff2") format("woff2"),
+    url("/webfonts/Format_1452.woff") format("woff");
 }
 
-p{
-    margin: auto;
-        margin-top: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        margin-left: auto;
-    padding: 0;
-        padding-top: 0;
-        padding-right: 20vw;
-        padding-bottom: 0;
-        padding-left: 0;
-    font-size: 1em;
-    color: black;
-    font-family: 'Grenze', serif;
-    width: 40vw;
-    max-width: 600px;
-    line-height: 1.4em;
-    letter-spacing: 1px;
-}
-p::first-letter {
-    font-size: 2em;
-    /* font-size: 4em;
-    initial-letter: 1.5;
-    float: left; */
-}
-p .firstwords{
-    display: inline-block;
-    width: auto;
-    margin: 0;
-    font-size: 1em;
-}
-p .firstwords::first-letter {
-    font-family: 'UnifrakturCook', cursive;
-    color: rgb(160, 24, 24);
-    font-size: 6em;
-    initial-letter: 3;
-    text-transform: uppercase;
-    -moz-animation: bugfix 0.001s;
+:root {
+  --main-bg-color: #f5ede0;
+  --main-yellow: #ffb41d;
+  --main-blue: #5858a8;
+  --main-red: #ca2727;
 }
 
-@-moz-keyframes bugfix { from { padding-right: 1px ; } to { padding-right: 0; } }
-
-
-
-
-
-
-
-
-p:nth-of-type(5n), p:nth-of-type(7n){
-    padding-right: 0vw;
-    padding-left: 20vw;
+body {
+  background-color: var(--main-bg-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya", serif;
+  letter-spacing: 1px;
 }
 
-
-
-
-
-p:nth-child(3n), p:nth-child(6n){
-    padding-right: 0vw;
-    padding-left: 10vw;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Format_1452", serif;
 }
 
-p.center{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
+a {
+  color: var(--main-red);
+  text-decoration: none;
 }
 
-.rightalign{
-    text-align: right;
+a:hover {
+  text-decoration: underline;
 }
 
-p.copyright, p.publisher{
-    width:30vw;
-    margin: auto;
-    padding: 0;
+img {
+  /* mix-blend-mode: multiply; */
+  mix-blend-mode: multiply;
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
-p.publisher{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+body pre:first-child {
+  display: none;
 }
 
-
-h2{
-    margin-top: 80vh;
-    font-size: 4em;
-    text-align: center;
-    color:#560319;
+body pre:last-of-type {
+  display: none;
 }
 
-h4{
-    padding-bottom: 1em;
-    border-bottom: 3px solid #560319;
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 3em;
-    font-size: 2em;
+pre {
 }
 
-
-.footnote{
-    font-family: 'Source Code Pro', monospace;
-    font-size: .7em;
-    width:15vw;
-    position: absolute;
+table {
+  position: fixed;
+  right: 0;
+  bottom: 2em;
+  z-index: 5;
+  font-size: 0.9em;
+  line-height: 1.1em;
+  opacity: 0.3;
+  width: calc((100vw - 700px) / 2);
+  font-family: "Format_1452", serif;
 }
 
-.footnote p{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+table:hover {
+  opacity: 1;
 }
 
-.fnanchor{
-    vertical-align: super;
-    font-size: .7em;
+hr {
+  border: 10px solid var(--main-yellow);
+  margin-bottom: 45vh;
+  width: 65ch;
+  margin-top: 0;
 }
 
-.pagenum {
-    position: absolute;
-    right:0;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 700;
-    
+h1:first-of-type {
+  padding-top: 40vh;
+  background-color: var(--main-bg-color);
+  text-transform: uppercase;
+  z-index: 10;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  box-shadow: 0 0 15px 15px var(--main-bg-color);
+  font-size: 4rem;
 }
 
-.pagenum a{
-    color: lightsalmon;
+h2:nth-last-of-type(1) {
+  padding-bottom: 50vh;
+  background-color: var(--main-bg-color);
+  color: var(--main-red);
+  z-index: 10;
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px 15px var(--main-bg-color);
+  font-size: 3rem;
 }
 
-p.figcenter, div.figcenter{
-    /*reset all padding and margin */
-    padding: 0 !important;
-    margin: 0;
-    margin: 70px auto 70px auto !important;
+h3 {
+  text-transform: uppercase;
 }
 
-.figcenter + .figcenter{
-    margin-top: 20vh;
+body > h3:first-of-type {
+  color: var(--main-blue);
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: 39vh;
+  letter-spacing: 3px;
 }
 
-.figcenter{
-    width: auto;
-    background-color: rgb(250, 240, 232);
+i {
 }
 
-.figcenter img{
-    /* this mixes the image with the background of its parent so the boxes are not white */
-    mix-blend-mode: multiply;
-
-    /* this centers the images */
-    display: block;
-    margin: 0 auto;
-
-    /* limit our images to the width of their container */
-    /* max-width: 100%;
-    min-width: 100%;
-    height: auto; */
+p {
+  max-width: 45vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  width: 500px;
+  margin-block-end: 1.4rem;
+  margin-block-start: 1.4rem;
 }
 
-a[name="chap2"] {
-    
+p.center {
+  text-align: center;
 }
 
-
-
-table[summary="table of contents"] tr:nth-of-type(3) td{
-    /* text-align: center; */
-    padding-left: 90px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    text-transform: lowercase;
-
-    /* font-family: 'UnifrakturCook', cursive; */
-    
-    font-size: 2em;
+p big {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-family: "Format_1452", serif;
+  font-variant-caps: small-caps;
 }
 
-
-
-
-.initial{
-    display:none;
+p.poem {
+  /* width: 45vw; */
+  /* margin-left: 150px; */
+  font-family: "Format_1452", serif;
+  font-size: 1.2em;
+  line-height: 1.7em;
+  hanging-punctuation: first;
 }
 
-
-
-h1:first-of-type{
-    /* font-family: 'UnifrakturCook', cursive; */
-    text-align: center;
-    font-size: 8em;
-    line-height: 1em;
-    color:#560319;
-    margin-bottom: 26vh;
-    margin-top: 26vh;
+p.right {
+  text-align: right;
+  font-style: italic;
+  font-family: "Format_1452", serif;
+  font-size: 1.2rem;
+  /* margin-left: 150px; */
+  width: calc(((100vw - 700px) / 2) - 150px);
 }
 
+h3 + p {
+  margin-top: -5em;
+}
 
+p.right:before {
+  content: "--";
+}
 
+.chapter {
+  margin-top: 70vh;
+}
 
-table{
+.fig {
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fig + p::first-letter {
+  color: var(--main-blue);
+  font-size: 6em;
+  initial-letter: 5;
+  text-transform: uppercase;
+  -moz-animation: bugfix 0.001s;
+}
+
+.chapter h3 {
+  background-color: var(--main-bg-color);
+  color: var(--main-blue);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-width: calc(50vh - 1em);
+  margin-left: 50px;
+  padding-top: 1em;
+  transform-origin: top left;
+  transform: translate(calc((100vw - 800px) / 2), 1em) rotate(90deg);
+  font-size: 25px;
+  line-height: 1.2em;
+
+  border-top: solid 5px var(--main-yellow);
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1250px) and (min-width: 800px) {
+  body {
+    /* background-color: rgb(195, 196, 250); */
+  }
+
+  body > h3:first-of-type {
+    /* position: relative;
+    z-index: 10;
+    background-color: var(--main-bg-color); */
+    margin-left: auto;
+    margin-right: 10vw;
+    max-width: 58vw;
+  }
+
+  hr {
+    position: relative;
+    z-index: 10;
+    background-color: var(--main-bg-color);
+  }
+
+  table {
+    background-color: var(--main-bg-color);
+    right: auto;
+    left: 2vw;
+    bottom: 0;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
     width: 30vw;
-    margin:auto;
+    opacity: 1;
+    box-shadow: -30px 0 15px 15px var(--main-bg-color);
+  }
+
+  p {
+    margin-right: 10vw;
+  }
+
+  p.right {
+    width: 45vw;
+    margin-right: 10vw;
+    margin-left: auto;
+  }
+
+  .fig {
+    margin-right: 10vw;
+    max-width: 58vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+
+  .chapter h3 {
+    transform: translate(3em, 1em) rotate(90deg);
+  }
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    /* background-color: rgb(130, 253, 146); */
+  }
+  table {
+    background-color: var(--main-bg-color);
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    top: auto;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 50vw;
+    margin: auto;
+    opacity: 1;
+    box-shadow: 0 0 15px 15px var(--main-bg-color);
+  }
 
-/* ----------- SMART PHONES ----------- */
-@media only screen and (max-width: 800px) {
-    p{
-        margin: auto;
-            margin-top: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-            margin-left: auto;
-        padding: 0;
-            padding-top: 0;
-            padding-right: 0vw;
-            padding-bottom: 0;
-            padding-left: 0;
-        font-size: 1.4em;
-        color: black;
-        font-family: 'Grenze', serif;
-        width: 80vw;
-        max-width: 600px;
-        line-height: 1.7em;
-        letter-spacing: 1px;
-    }
-    p::first-letter {
-        font-size: 2.5em;
-    }
-    
-    p:nth-of-type(5n), p:nth-of-type(6n){
-        padding-right: 0vw;
-        padding-left: 0vw;
-        margin-bottom: 70px;
-    }
+  .chapter h3 {
+    padding-left: 1rem;
+    transform: translate(40px) rotate(90deg);
+    border: none;
+    background-color: transparent;
+  }
 
-    .footnote, .fnanchor{
-        display: none;
-    } 
+  p {
+    margin-right: 10vw;
+    width: 70vw;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    h4{
-        width: 400px;
-    }
-}
+  p.poem,
+  p.right {
+    font-size: 16px;
+  }
 
-/* ----------- TABLETS ----------- */
-@media only screen and (min-width: 800px) and (max-width: 1280px) {
-    p{
-        margin: auto;
-            margin-top: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-            margin-left: auto;
-        padding: 0;
-            padding-top: 0;
-            padding-right: 30vw;
-            padding-bottom: 0;
-            padding-left: 0;
-        font-size: 1.1em;
-        color: black;
-        font-family: 'Grenze', serif;
-        width: 60vw;
-        max-width: 600px;
-        line-height: 1.4em;
-        letter-spacing: 1px;
-    }
-    p::first-letter {
-        font-size: 2.5em;
-    }
-    
-    p:nth-of-type(5n), p:nth-of-type(6n){
-        padding-right: 0vw;
-        padding-left: 30vw;
-        margin-bottom: 70px;
-    }
-
-    .footnote, .fnanchor{
-        display: none;
-    } 
+  .fig {
+    width: 80vw;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p.center {
+    margin-top: 25vh;
+  }
 }
